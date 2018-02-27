@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <title>Flip Stitch Pillow Shop</title>
+  <!-- Link to styles.css -->
+  <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+</head>
+
+<body>
+  <div id="container">
+    <div id="top_row"> <!-- Top row with logo, search bar, and cart -->
+        <div id="logo">
+          <a href="index.html"><img src="images/logo.jpg" alt="logo"></a>
+        </div>
+        <div id="search_bar">
+          <img src="images/search.jpg" alt="search">
+        </div>
+        <div id="cart">
+          <img src="images/cart.png" alt="cart">
+        </div>
+    </div>
+    <br /><br />
+
+    <nav id="navigation"> <!-- Navigation Bar -->
+      <a href="#">ABOUT</a>
+      <a href="products.html">PRODUCT</a>
+      <a href="#">CONTACT</a>
+    </nav>
+    <br />
+
+    <div id="product_detail">
+      <div id="first">
+        <img src="images/cat_big.jpg" id="cat" alt="cart">
+      </div>
+      <div id="second">
+        <p>Cat Pillow</p>
+        <span>$20.99</span><br /><br />
+        Color: <!-- Squares for choosing color -->
+        <svg width="20" height="20">
+          <rect width="20" height="20" style="fill:rgb(255,51,51);" />
+        </svg>
+        <svg width="20" height="20">
+          <rect width="20" height="20" style="fill:rgb(153,0,153);" />
+        </svg>
+        <svg width="20" height="20">
+          <rect width="20" height="20" style="fill:rgb(0,0,255);" />
+        </svg>
+        <svg width="20" height="20">
+          <rect width="20" height="20" style="fill:rgb(0,0,0);" />
+        </svg>
+        <svg width="20" height="20">
+          <rect width="20" height="20" style="fill:rgb(255,255,255); stroke-width:3;stroke:rgb(0,0,0)" />
+        </svg>
+        <br /><br />
+        Shape: <br /><br />
+        <form> <!-- Radio button to choose the shape -->
+          <input type="radio" name="shape" value="square" checked> Square
+          <input type="radio" name="shape" value="round"> Round
+          <input type="radio" name="shape" value="dog"> Dog
+          <input type="radio" name="shape" value="bunny"> Bunny
+          <input type="radio" name="shape" value="cat"> Cat
+        </form>
+        <br /> <!-- Two buttons for purchases -->
+        <button class="button">Add to Cart</button>
+        <button class="button">Buy Now</button>
+      </div>
+
+      <div id="clear"></div>
+    </div>
+    <br /><br /><br />
+
+    <h3>Similar Products</h3>
+    <div id="recommend">
+        <div id="r1">
+         <img src="images/p1.jpg" alt="image">
+        </div>
+        <div id="r2">
+          <img src="images/p2.jpg" alt="image">
+        </div>
+        <div id="r3">
+          <img src="images/p3.jpg" alt="image">
+        </div>
+        <div id="r4">
+          <img src="images/p4.jpg" alt="image">
+        </div>
+    </div>
+  </div>
+</body>
+</html>
+<!-- Looked at how to format divs in the website below -->
+<!-- https://stackoverflow.com/questions/15374918/how-to-put-two-div-boxes-side-by-side -->
+<!-- How to draw square: https://www.w3schools.com/graphics/svg_rect.asp -->
+<!-- CSS Button: https://www.w3schools.com/css/css3_buttons.asp -->
