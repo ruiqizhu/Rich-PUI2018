@@ -1,0 +1,9 @@
+* {
+    font-family: "Roboto";
+} /* Using a consistent font */
+
+/* Centering the div element */
+#animal {
+    text-align: center;
+}
+
