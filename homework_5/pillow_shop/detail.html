@@ -6,6 +6,9 @@
   <!-- Link to styles.css -->
   <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
   <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/pillow.js"></script>
+
 </head>
 
 <body>
@@ -18,7 +21,7 @@
           <img src="images/search.jpg" alt="search">
         </div>
         <div id="cart">
-          <img src="images/cart.png" alt="cart">
+          <a href="cart.html"><img src="images/cart.png" alt="cart"></a>
         </div>
     </div>
     <br /><br />
@@ -53,23 +56,34 @@
         <svg width="20" height="20">
           <rect width="20" height="20" style="fill:rgb(255,255,255); stroke-width:3;stroke:rgb(0,0,0)" />
         </svg>
-        <br /><br />
-        Shape: <br /><br />
+        <form> <!-- Radio button to choose the color -->
+          <input id="red" type="radio" name="shape" value="red" class="color"> Red
+          <input id="purple" type="radio" name="shape" value="purple" class="color"> Purple
+          <input id="blue" type="radio" name="shape" value="blue" class="color"> Blue
+          <input id="black" type="radio" name="shape" value="black" class="color"> Black
+          <input id="white" type="radio" name="shape" value="white" class="color"> White <br /><br />
+        </form>
+
+
+
+        Shape: <br />
         <form> <!-- Radio button to choose the shape -->
-          <input type="radio" name="shape" value="square" checked> Square
-          <input type="radio" name="shape" value="round"> Round
-          <input type="radio" name="shape" value="dog"> Dog
-          <input type="radio" name="shape" value="bunny"> Bunny
-          <input type="radio" name="shape" value="cat"> Cat
+          <input id="square" type="radio" name="shape" value="square" class="shape"> Square
+          <input id="round" type="radio" name="shape" value="round" class="shape"> Round
+          <input id="dog" type="radio" name="shape" value="dog" class="shape"> Dog
+          <input id="bunny" type="radio" name="shape" value="bunny" class="shape"> Bunny
+          <input id="kitty" type="radio" name="shape" value="kitty" class="shape"> Kitty
+          <br /><br />
+          Quantity<input id="quantity" type="number" name="quantity" min="1" step="1" max="100" value="1">
         </form>
         <br /> <!-- Two buttons for purchases -->
-        <button class="button">Add to Cart</button>
-        <button class="button">Buy Now</button>
+        <button id="add-cart" class="button">Add to Cart</button>
+        <button id="wishlist" class="button">Add to Wishlist</button>
       </div>
 
       <div id="clear"></div>
     </div>
-    <br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br />
 
     <h3>Similar Products</h3>
     <div id="recommend">

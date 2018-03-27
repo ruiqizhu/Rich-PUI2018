@@ -88,7 +88,7 @@ span {
 /* Formatting for product details */
 /* Product image is on the left and product info is on the right */
 #product_detail{
-    width: 1000px;
+    width: 1200px;
     margin: auto;
     font-size: 25px;
 }
@@ -98,7 +98,7 @@ span {
     height: 300px;
 }
 #second {
-    width: 500px;
+    width: 700px;
     float: left;
     height: 300px;
 }
