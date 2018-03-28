@@ -7,6 +7,7 @@
   <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
   <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/pillow.js"></script>
   <script src="js/cart.js"></script>
 
 </head>
@@ -21,7 +22,7 @@
           <img src="images/search.jpg" alt="search">
         </div>
         <div id="cart">
-          <a href="cart.html"><img src="images/cart.png" alt="search"><strong>3</strong></a>
+          <a href="cart.html"><img src="images/cart.png" alt="search"><strong id="items-count">3</strong></a>
         </div>
     </div>
     <br /><br />
@@ -34,33 +35,7 @@
 
 
     <div id="cart-content">
-      <div id="product_detail">
-        <div id="first">
-          <img src="images/p1.jpg" id="cat" alt="cart">
-        </div>
-        <div id="second">
-          <p><strong>Cat Pillow</strong></p>
-          Shape: round <br />
-          Quantity: 2 <br />
-          Color: blue <br />
-          Price:<span>$20.99</span><br />
-          <button class="button">Delete</button>
-        </div>
-      </div>
-
-      <div id="product_detail">
-        <div id="first">
-          <img src="images/p1.jpg" id="cat" alt="cart">
-        </div>
-        <div id="second">
-          <p><strong>Cat Pillow</strong></p>
-          Shape: round <br />
-          Quantity: 2 <br />
-          Color: blue <br />
-          Price:<span>$20.99</span><br />
-          <button class="button">Delete</button>
-        </div>
-      </div>
+      <!-- Adding cart items -->
     </div>
 
 
@@ -68,7 +43,7 @@
 
 
     <div style="float:right">
-    <h2>Subtotal: $100.00</h2>
+    <h2 id="subtotal">Subtotal: $100.00</h2>
     <button class="button">Checkout</button>
 
 

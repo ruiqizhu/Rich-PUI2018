@@ -21,7 +21,9 @@ $(document).ready(function() {
 
     // Find the cart and total quantity of cart items
     var cart = JSON.parse(localStorage.getItem("cart")) || [];
-    var items_count = JSON.parse(localStorage.getItem("count")) || 0;
+    var items_count = cart.length;
+    // Update the number on the cart icon
+    $("#items-count").text(items_count);
 
     // Set attributes for the pillow
     let name = pillow_names[index];
@@ -54,10 +56,8 @@ $(document).ready(function() {
         if (quantity > 0) {
             let cart_items = new Pillow(name, shape, quantity, color, price, index);
             cart.push(cart_items);
-            items_count += quantity;
             // save the new cart and count to logal storage
             localStorage.setItem("cart", JSON.stringify(cart));
-            localStorage.setItem("count", JSON.stringify(items_count));
             window.location.href="cart.html";
         }
         else {
