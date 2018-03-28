@@ -35,11 +35,11 @@
 
     <div id="product_detail">
       <div id="first">
-        <img src="images/cat_big.jpg" id="cat" alt="cart">
+        <img id="product-img" src="images/p9.jpg" id="cat" alt="cart">
       </div>
       <div id="second">
-        <p>Cat Pillow</p>
-        <span>$20.99</span><br /><br />
+        <p id="product-name">Cat Pillow</p>
+        <span id="product-price">$20.99</span><br /><br />
         Color: <!-- Squares for choosing color -->
         <svg width="20" height="20">
           <rect width="20" height="20" style="fill:rgb(255,51,51);" />
@@ -57,7 +57,7 @@
           <rect width="20" height="20" style="fill:rgb(255,255,255); stroke-width:3;stroke:rgb(0,0,0)" />
         </svg>
         <form> <!-- Radio button to choose the color -->
-          <input id="red" type="radio" name="shape" value="red" class="color"> Red
+          <input id="red" type="radio" name="shape" value="red" class="color" checked="checked"> Red
           <input id="purple" type="radio" name="shape" value="purple" class="color"> Purple
           <input id="blue" type="radio" name="shape" value="blue" class="color"> Blue
           <input id="black" type="radio" name="shape" value="black" class="color"> Black
@@ -68,7 +68,7 @@
 
         Shape: <br />
         <form> <!-- Radio button to choose the shape -->
-          <input id="square" type="radio" name="shape" value="square" class="shape"> Square
+          <input id="square" type="radio" name="shape" value="square" class="shape" checked="checked"> Square
           <input id="round" type="radio" name="shape" value="round" class="shape"> Round
           <input id="dog" type="radio" name="shape" value="dog" class="shape"> Dog
           <input id="bunny" type="radio" name="shape" value="bunny" class="shape"> Bunny
