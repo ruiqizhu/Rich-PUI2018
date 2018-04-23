@@ -1,0 +1,146 @@
+@import 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Work+Sans:100,200,300,400,500,600,700,800,900|Lora:400,400i,700,700i';
+iframe{
+	border:none;
+}
+*{
+	font-family:inherit;
+}
+
+body{
+	font-family: 'Work Sans', serif;
+}
+
+
+.btn-custom, .hire-me,
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Poppins', sans-serif;
+}
+
+body, html{
+	height:100%;
+	width:100%;
+}
+img{
+	max-width:100%;
+}
+
+
+#main-wrapper{
+	left:45%;
+	width:55%;
+	top:0;
+	bottom:0;
+	right:0;
+	position:fixed;
+	z-index:199;
+	background:#FFF;
+}
+
+
+.col-img{
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:45%;
+	z-index:198;
+	background-size:cover;
+	background-position:center top;
+}
+
+.v-align{
+	height:100%;
+	width:100%;
+	display:table;
+}
+
+.intro-footer{
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	padding:0 15px;
+	padding-bottom:15px;
+}
+.intro-footer .hire-me{
+	text-transform:uppercase;
+	letter-spacing:2px;
+	font-weight:700;
+	font-size:16px;
+	color:#202020;
+	text-decoration:none;
+	margin-top:4px;
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+}
+.footer-social{
+	position:relative;
+	list-style:none;
+	font-size:0;
+	padding:0;
+	margin:0;
+}
+.footer-social > li{
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	margin-left:25px;
+}
+.footer-social > li > a{
+	display:block;
+	padding:5px;
+	margin:-5px;
+	font-size:22px;
+	color:#202020;
+	text-decoration:none;
+}
+
+.pre{
+	margin:0;
+	font-family:Lora, serif;
+	letter-spacing:4px;
+	font-style:italic;
+	color:#898989;
+	margin-bottom:35px;
+	font-weight:bold;
+	line-height:1.6em;
+}
+.about-text > h2{
+	margin:0;
+	font-weight:700;
+	letter-spacing:1px;
+	line-height:1.4em;
+	font-size:40px;
+}
+.about-text > p{
+	margin-top:25px;
+	margin-bottom:0;
+	font-size:16px;
+	line-height:1.8em;
+	color:rgba(0,0,0,.6);
+}
+
+
+@media(max-width:992px){
+	.no-col .col-img{
+		display:none;
+	}
+
+	.col-img{
+		height:100%;
+	}
+	
+	.col-img, #main-wrapper{
+		display:block;
+		position:relative;
+		left:auto;
+		width:100%;
+		top:auto;
+		right:auto;
+	}
+
+	.v-align{
+		display:block;
+	}
+}
